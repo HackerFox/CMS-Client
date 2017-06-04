@@ -7,9 +7,12 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "draft-js": "^0.10.1",
+    "es6-shim": "^0.35.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-cookies": "0.0.1",
     "react-dom": "^15.5.4",
+    "react-draft-wysiwyg": "^1.10.0",
     "react-web-animation": "^0.3.4",
     "semantic-ui-css": "^2.2.10",
     "semantic-ui-react": "^0.68.5"

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Animated } from 'react-web-animation';
 import {animate} from '../../lib/index'
+
 export default class AnimateCss extends Component {
   constructor() {
     super();
@@ -97,10 +98,7 @@ export default class AnimateCss extends Component {
           {selections.map((o, idx) => <option key={idx}>{o}</option>)}
         </select>
       </div>
-      <a style={sourceLink}
-         href='https://github.com/RinconStrategies/react-web-animation/blob/master/demo/src/animate_css.js'>
-        View Source
-      </a>
+
     </div>
   )
   }
