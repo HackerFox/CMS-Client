@@ -1,5 +1,5 @@
 
-const animate = {
+var animate = {
  bounce(iterations = 1) {
    const keyframes = [
      { transform: 'translate3d(0,0,0)', offset: 0 },
@@ -618,9 +618,7 @@ const animate = {
    const keyframes = [{ transform: 'none', opacity: '1', transformOrigin: 'center', offset: 0 },
      { transform: 'rotate3d(0, 0, 1, 200deg)', opacity: '0', transformOrigin: 'center', offset: 1 }];
    const timing = { duration: 900, iterations: iterations };
-
    return { keyframes, timing };
-
  }
 }
 

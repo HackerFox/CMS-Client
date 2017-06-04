@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Animated } from 'react-web-animation';
-import {DEFAULT_ANIMATION} from '../../lib/index'
+import {animate} from '../../lib/index'
 export default class AnimateCss extends Component {
   constructor() {
     super();
 
-    this.animations = Object.keys(DEFAULT_ANIMATION);
+    this.animations = Object.keys(animate);
 
     this.state = {
       selected: 'bounce',
@@ -15,6 +15,10 @@ export default class AnimateCss extends Component {
 
     this.onBoxClick = this.onBoxClick.bind(this);
     this.onChangeAnimation = this.onChangeAnimation.bind(this);
+  }
+
+  componentWillMount(){
+    console.log(animate)
   }
 
   getStyles() {
@@ -75,7 +79,7 @@ export default class AnimateCss extends Component {
 
   render() {
     const { body, sourceLink, box, controls } = this.getStyles();
-    const { keyframes, timing } = DEFAULT_ANIMATION[this.state.selected]();
+    const { keyframes, timing } = animate[this.state.selected]();
     const { selections, playState, selected } = this.state;
 
     return(

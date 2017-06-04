@@ -1,5 +1,3 @@
-import DEFAULT_ANIMATION from './animation_default'
-
 module.exports = {
-  DEFAULT_ANIMATION 
+  animate : require('./animation_default').default
 }
