@@ -26,11 +26,19 @@ class AddPost extends React.Component {
     ));
   }
 
+  makeItalic() {
+    this.onChange(RichUtils.toggleInlineStyle(
+      this.state.editorState,
+      'ITALIC'
+    ))
+  }
+
   render(){
     return(
       <div>
         <h4 style={{ fontWeight: 200, fontSize: 35, fontfamily: 'Roboto' }}>Feel Free to Register your Account!</h4>
         <button onClick={() => {this.makeBold()}}>BOLD</button>
+        <button onClick={() => {this.makeItalic()}}>ITALIC</button>
         <Editor style={{  }}
           editorState={this.state.editorState}
           onChange={(editorState) => { this.onChange(editorState) }}
