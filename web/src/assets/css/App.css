@@ -20,6 +20,13 @@
   font-size: large;
 }
 
+.DraftEditor-root {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    margin: 100px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

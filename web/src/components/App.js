@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/App.css';
-import Main from './ComponentExperimental/Main'
+import Main from './ComponentExperimental/Main.js';
 import AddPost from './Page/AddPost'
 
 class App extends React.Component {
