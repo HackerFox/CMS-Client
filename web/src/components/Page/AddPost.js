@@ -35,18 +35,12 @@ class AddPost extends React.Component {
   }
 
   render(){
-    const raw = convertToRaw(this.state.editorState,getCurrentContent());
     return(
       <div>
         <h4 style={{ fontWeight: 200, fontSize: 35, fontfamily: 'Roboto' }}>Feel Free to Register your Account!</h4>
         <button onClick={() => {this.makeBold()}}>BOLD</button>
         <button onClick={() => {this.makeItalic()}}>ITALIC</button>
         <button onClick={() => {this.makeItalic()}}>ITALIC2</button>
-        <Editor style={{  }}
-          editorState={this.state.editorState}
-          onChange={(editorState) => { this.onChange(editorState) }}
-          placeholder="This is the Editor"
-          />
       </div>
     )
   }
